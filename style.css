@@ -1,0 +1,180 @@
+* *::before *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Normal styling */
+body{
+    background-image:url(./assets/images/pattern-squiggly-line-bottom-desktop.svg), url(./assets/images/pattern-lines.svg), url(./assets/images/pattern-circle.svg), url(./assets/images/pattern-squiggly-line-top.svg) , url(./assets/images/background-desktop.png);
+    color: hsl(0, 0%, 100%);
+    background-position:bottom left, top center, top left, top right, top center;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: auto, auto, auto, auto, cover;
+    min-height: 100svh;
+    font-family: "Inconsolata", monospace;
+}
+
+/* Semantic styling */
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+.section1{
+    max-width: 100%;
+}
+
+/* Font styling */
+.textsInput{
+    color: hsl(252, 6%, 83%);
+    height: 25px;
+    margin: 5px 0;
+    padding: 10px;
+    border: solid 1px hsl(0, 0%, 100%);
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.nameInput{
+    height: 25px;
+    margin: 5px 0;
+    padding: 10px;
+    border: solid 1px hsl(0, 0%, 100%);
+    border-radius: 10px;
+    background-color: transparent;
+}
+.imageInput {
+    height: 100px;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+/* Class Styling */
+.imageCn{
+    width: 100%;
+}
+.name{
+    max-width: 450px;
+    text-align: center;
+}
+.imageInfo{
+    color: hsl(252, 6%, 83%);
+    display: flex;
+    gap: 3px;
+}
+.submitBtn{
+    width: 100%;
+    background-color: hsl(7, 88%, 67%);
+    border: none;
+    font: inherit;
+    padding: 10px 50px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.imageInputInfo {
+    font-size: small;
+    color: hsl(245, 19%, 35%);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.info {
+    color: hsl(252, 6%, 83%);
+    font-weight: 400;
+    align-self: center;
+}
+
+/* Error Message Containers */
+.emailContain {
+    opacity: 0;
+    color: hsl(7, 71%, 60%);
+}
+.nameContain {
+    opacity: 0;
+    color: hsl(7, 71%, 60%);
+}
+.unContain {
+    opacity: 0;
+    color: hsl(7, 71%, 60%);
+}
+
+/* Ticket Page Styles */
+
+/* Class Styles */
+.codingConf {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content:flex-start;
+}
+.AA {
+    position: relative;
+    bottom: 0;
+    left: 5%;
+}
+.AB {
+    position: relative;
+    top: 20%;
+    left: 5%;
+}
+
+.conding{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.date {
+    font-size: smaller;
+    margin-top: -10px;
+}
+.fname {
+    background-image: linear-gradient(90deg, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.email {
+    color: hsl(7, 71%, 60%);
+}
+.ticket {
+    position: relative;
+    background-image: url(./assets/images/pattern-ticket.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 429px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.details-container{
+    position: relative;
+}
+.ticket-number {
+    position: absolute;
+    left: 85%;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    align-self: center;
+    font-size: large;
+    color: hsl(245, 15%, 58%);
+}
+.complement {
+    max-width: 470px;
+    text-align: center;
+}
+.mail-details {
+    max-width: 420px;
+    text-align: center;
+}

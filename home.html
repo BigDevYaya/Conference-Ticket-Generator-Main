@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+
+    <title>Conference Ticket</title>
+</head>
+<body>
+    <main>
+        <img src="./assets/images/logo-full.svg" alt="logo">
+        <h1 class="complement">Congrats, <span class="fname" id="fullName">Israel Yaya</span>! Your ticket is ready.</h1>
+        <p class="mail-details">
+            We've emailed your ticket to <span class="email" id="user-email">israelyaya0@gmail.com</span> and will send updates in the run up to the event.
+        </p>
+        <div class="ticket">
+            <div class="datails-container">
+                <div class="codingConf AA">
+                        <img src="./assets/images/logo-mark.svg" alt="">
+                        <div class="conding">
+                            <h2>Coding Conf</h2>
+                            <span class="date">Jan 31, 2025 / Austin, TX</span>
+                        </div>   
+                </div>
+                <div class="codingConf AB">
+                    <img src="./assets/images/logo-mark.svg" alt="">
+                    <div class="conding">
+                        <p id="fullN">Israel Yaya</p>
+                        <div style="display: flex; align-items: center; margin-top: -10px;"><img src="./assets/images/icon-github.svg" alt="GitHub"><span id="uname">@israelyaya0</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="ticket-number">
+                <p class="number">#01609</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        const fullName = document.getElementById('fullName');
+        const userMail = document.getElementById('user-email');
+        const UserName = document.getElementById('uname');
+        const fullN = document.getElementById('fullN');
+        const ticketNumber = document.querySelector('.number')
+        ticketNumber.textContent = '#' + `${Math.floor(Math.random() * 10000 + 1)}`.padStart(4  ,0)
+
+        const storedName = localStorage.getItem('namef');
+        const storedMail = localStorage.getItem('mail');
+        const storedUname = localStorage.getItem('uname')
+      
+        if (storedName) {
+          fullName.textContent = storedName;
+          userMail.textContent = storedMail;
+          UserName.textContent = storedUname;
+          fullN.textContent = storedName;
+        } else {
+          fullName.textContent = 'Name not found';
+        }
+      </script>
+</body>
+</html>

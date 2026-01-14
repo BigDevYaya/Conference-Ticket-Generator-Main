@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Conference ticket generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+</head>
+<body>
+  <main>
+    <img src="./assets/images/logo-full.svg" alt="logo">
+      <h1 class="name">Your Journey to Coding Conf 2025 Starts Here!</h1>
+      <p class="info">Secure your spot at next year's biggest coding conference.</p>
+      <form action="">
+        <fieldset >
+          <label for="imageUpload">
+            Upload Avatar
+          </label>
+          <input class="imageInput imageCn" type="image" src="./assets/images/icon-upload.svg"alt="" id="imageUpload">
+          
+          <div class="imageInfo">
+            <img src="./assets/images/icon-info.svg" alt="">
+            <span class="message">Upload your photo (JPG or PNG, max size: 500KB).</span>
+          </div>
+        </fieldset>
+        <fieldset>
+          <label for="fname">
+            Full Name
+          </label>
+          <input class="nameInput textsInput" type="text"  alt="" id="fname">
+          <div class="nameContain">
+            <img src="./assets/images/icon-info.svg" alt="">
+            <span class="nameError"></span>
+          </div> 
+        </fieldset>
+        <fieldset>
+          <label for="email">
+           Email Address
+          </label>
+          <input class="emailInput textsInput" type="email" placeholder="example@gmail.com" alt="" id="email">
+          <div class="emailContain">
+            <img src="./assets/images/icon-info.svg" alt="">
+            <span class="emailError"></span>
+          </div>
+        </fieldset>
+        <fieldset>
+          <label for="GitHub">
+           GitHub Username
+          </label>
+          <input class="GitHub textsInput" type="text" placeholder="@yourusername" id="GitHub"  alt="">
+          <div class="unContain">
+            <img src="./assets/images/icon-info.svg" alt="">
+            <span class="userNameError"></span>
+          </div>
+        </fieldset>
+        <fieldset>
+          <input class="submitBtn" type="submit" value="Generate My Ticket" id="submit">
+        </fieldset>
+      </form>
+
+  </main>
+
+
+
+
+  <!--
+  Form starts 
+
+  
+
+  
+
+  Upload Avatar
+  Drag and drop or click to upload
+  
+
+  Full Name
+
+  Email Address
+  example@email.com
+
+  GitHub Username
+  @yourusername
+
+  Generate My Ticket
+
+  Form ends
+
+  Generated tickets starts
+
+  Congrats, Full Name ! Your ticket is ready.
+
+  
+
+  
+
+  Generated tickets ends
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  -->
+  </div>
+</body>
+</html>
